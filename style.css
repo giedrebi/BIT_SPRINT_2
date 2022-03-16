@@ -9,12 +9,19 @@
     list-style: none;
     text-decoration: none;
 }
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 .sidebar {
     position: fixed;
     left: -10rem;
     width: 10rem;
     height: 100vh;
-    background: rgba(137, 18, 173, 0.767);
+    background: rgba(137, 18, 173, 0.750);
     text-shadow: 1px 1px 4px white;
 }
 .sidebar_header {
@@ -22,7 +29,7 @@
     color: white;
     padding: 1rem 0;
     line-height: 2rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.750);
     text-shadow: 1px 1px 4px white;
     text-align: center;
     
