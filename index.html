@@ -9,7 +9,9 @@
  
 </head>
 <body>
-    <video autoplay muted loop src="images/Abstract.mp4" type="video/mp4"></video>
+    <video autoplay muted loop>
+        <source src="images/Abstract.mp4" type="video/mp4">
+    </video>
     <input type="checkbox" id="sidebar_checkbox" />
     <label for="sidebar_checkbox">
         <i class="fas fa-bars" id="bar"></i>
@@ -17,7 +19,7 @@
     </label>
     <div class="sidebar">
         <div class="sidebar_header">
-            <img src="images/icons8-g-96.png" alt="">
+            <img id="portrait" src="images/Giedre Bielske.jpg" alt="">
             <p>Web developer</p>
         </div>
         <ul>
@@ -32,6 +34,10 @@
             </li>
         </ul>
     </div>
-    <section></section>
+    <section>
+        <p>Hi,</p>
+        <p>I'm Giedre,</p>
+        <p>Web developer</p>
+    </section>
 </body>
 </html>
