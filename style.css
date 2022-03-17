@@ -50,7 +50,7 @@ section > p {
     left: -10rem;
     width: 10rem;
     height: 100vh;
-    background: #b030b0be;
+    background: #b030b080;
     text-shadow: 1px 1px 4px white;
 }
 .sidebar_header {
@@ -58,7 +58,7 @@ section > p {
     color: white;
     padding: 1rem 0;
     line-height: 2rem;
-    background-color: #202060be;
+    background-color: #20206080;
     text-shadow: 1px 1px 4px white;
     text-align: center;  
 }
@@ -81,26 +81,36 @@ section > p {
 #sidebar_checkbox {
     display: none;
 }
-#bar_btn , #cancel_btn {
+#bar_btn , #cancel_btn , #contact_btn {
     position: absolute;
     cursor: pointer;
-    background: #b030b0be ;
-    border-radius: 20%;
+    background: #b030b080 ;
+    border-radius: 50px;
     font-size: 2rem;
     top: 1.5rem;
-}
-
-#bar_btn {
-    left: 3rem;
     color: white;
     padding: 6px 12px;
+}
+#contact_btn {
+    font-size: 1rem;
+    text-shadow: 1px 1px 4px white;
+    margin: 28rem 12rem;
+    background: #b030b02a;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    transition: 0.4s;
+}
+#contact_btn:hover {
+    font-size: 1.5rem;
+    color: rgb(225, 255, 58);
+}
+#bar_btn {
+    left: 3rem;
     transition: all 0.5s;
+    font-size: 2rem;
 }
 #cancel_btn {
     left: -3rem;
     z-index: 2;
-    color: white;
-    padding: 6px 12px;
     transition: all 1s;
     top: 2rem;
     font-size: 1rem;
