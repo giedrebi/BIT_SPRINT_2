@@ -75,7 +75,7 @@ section {
 #sidebar_checkbox {
     display: none;
 }
-#bar , #cancel {
+#bar_btn , #cancel_btn {
     position: absolute;
     cursor: pointer;
     background: #b030b0be ;
@@ -83,23 +83,21 @@ section {
     font-size: 2rem;
     top: 1.5rem;
 }
-#cancel {
-    top: 2rem;
-    font-size: 1rem;
-    /* border: 0.5px solid white; */
-}
-#bar {
+
+#bar_btn {
     left: 3rem;
     color: white;
     padding: 6px 12px;
     transition: all 0.5s;
 }
-#cancel {
+#cancel_btn {
     left: -3rem;
     z-index: 2;
     color: white;
     padding: 6px 12px;
     transition: all 1s;
+    top: 2rem;
+    font-size: 1rem;
 }
 #sidebar_checkbox:checked ~ .sidebar {
     left: 0;
@@ -108,12 +106,12 @@ section {
 #sidebar_checkbox:not(checked) ~ .sidebar {
     transition: all 1s;
 }
-#sidebar_checkbox:checked ~ label #bar {
+#sidebar_checkbox:checked ~ label #bar_btn {
     left: 0;
     opacity: 0;
     pointer-events: none;
 }
-#sidebar_checkbox:checked ~ label #cancel {
+#sidebar_checkbox:checked ~ label #cancel_btn {
     left: 11rem;
 }
 
