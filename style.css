@@ -1,5 +1,4 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 * {
     margin: 0;
@@ -21,19 +20,21 @@ section {
     color: white;
     text-shadow: 1px 1px 4px white;
     font-size: 4rem;
-    background: rgba(137, 18, 173, 0.200);
+    background: #b030b02a;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 50px;
     padding: 1rem;
     margin: 8rem 12rem ;
-    transition: 2s;
+    animation: color-change 4.5s infinite;
 }
-section:hover {
-    color: rgb(225, 255, 58);
-    text-shadow: 1px 1px 4px white;
-}
+@keyframes color-change {
+    0% { color: white; }
+    50% { color: rgb(225, 255, 58); }
+    100% { color: white; }
+  } 
+
 #portrait {
     border-radius: 100%;
     width: 80%;
@@ -43,7 +44,7 @@ section:hover {
     left: -10rem;
     width: 10rem;
     height: 100vh;
-    background: rgba(137, 18, 173, 0.750);
+    background: #b030b0be;
     text-shadow: 1px 1px 4px white;
 }
 .sidebar_header {
@@ -51,7 +52,7 @@ section:hover {
     color: white;
     padding: 1rem 0;
     line-height: 2rem;
-    background-color: rgba(44, 6, 56, 0.75);
+    background-color: #202060be;
     text-shadow: 1px 1px 4px white;
     text-align: center;  
 }
@@ -77,7 +78,7 @@ section:hover {
 #bar , #cancel {
     position: absolute;
     cursor: pointer;
-    background: rgba(137, 18, 173, 0.767);
+    background: #b030b0be ;
     border-radius: 20%;
     font-size: 2rem;
     top: 1.5rem;
