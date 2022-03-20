@@ -16,7 +16,11 @@ video {
     min-height: 100%;
 }
 section {
-    position: fixed;
+    display: flex;
+    
+}
+.right {
+    flex: 20%;
     color: white;
     text-shadow: 1px 1px 4px white;
     background: #b030b02a;
@@ -25,14 +29,33 @@ section {
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 50px;
     padding: 1rem;
-    left: 14rem;
-    top: 6rem;
+    margin-left: 3rem;
+    margin-top: 6rem;
+    margin-right: 1rem;
+}
+.left {
+    flex: 17%;
+    color: white;
+    text-shadow: 1px 1px 4px white;
+    background: #b030b02a;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 50px;
+    padding: 1rem;
+    margin-left: 14rem;
+    margin-top: 6rem;
+    position: sticky;
     animation: color-change 4.5s infinite;
 }
-section h1 {
+.side > h1  {
     font-size: 4rem;
 }
-section p {
+.side > h3 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.side > p {
     font-size: 1rem;
     padding-top: 1rem;
 }
