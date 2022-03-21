@@ -21,12 +21,6 @@ section {
 .right {
     color: white;
     text-shadow: 1px 1px 4px white;
-    background: #b030b02a;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 50px;
-    padding: 1rem;
     margin-left: 3rem;
     margin-top: 6rem;
     margin-right: 1rem;
@@ -34,16 +28,18 @@ section {
 .left {
     color: white;
     text-shadow: 1px 1px 4px white;
+    margin-left: 14rem;
+    margin-top: 6rem;
+    position: sticky;
+    animation: color-change 4.5s infinite;
+}
+.box {
     background: #b030b02a;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 50px;
     padding: 1rem;
-    margin-left: 14rem;
-    margin-top: 6rem;
-    position: sticky;
-    animation: color-change 4.5s infinite;
 }
 .box > h1  {
     font-size: 4rem;
