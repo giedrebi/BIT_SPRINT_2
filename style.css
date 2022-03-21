@@ -15,54 +15,38 @@ video {
     min-width: 100%;
     min-height: 100%;
 }
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 14rem;
-}
-.name {
-    animation: color-change 4.5s infinite;
-}
-.box {
-    width: 40%;
-    color: white;
+footer , .sidebar {
+    background: #b030b036;
     text-shadow: 1px 1px 4px white;
-    background: #88248880;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 50px;
-    padding: 1rem;
-    margin: 2rem;
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    color: white;
 }
-.box > h1  {
-    font-size: 3.5rem;
+footer {
+    display: flex;
+    padding: 1rem 0;
 }
-.box > p {
+i {
+    margin-right: 0.5rem;
+}
+a {
+    color: white;
+    transition: 0.6s;
     font-size: 1rem;
-    padding-top: 1rem;
+    text-align: center;
+    line-height: 4rem;
 }
-@keyframes color-change {
-    0% { color: white; }
-    50% { color: rgb(225, 255, 58); }
-    100% { color: white; }
-  } 
-
-#portrait {
-    border-radius: 100%;
-    width: 80%;
+ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 .sidebar {
     position: fixed;
     left: -12rem;
     width: 12rem;
     height: 100vh;
-    background: #b030b036;
-    text-shadow: 1px 1px 4px white;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
 }
 .sidebar_header {
     font-size: 1rem;
@@ -76,38 +60,62 @@ video {
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
 }
-.sidebar_header a {
-    color: white;
-    transition: 0.6s;
-}
-
-.sidebar ul a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 4rem;
-    font-size: 1rem;
-    color: white;
-    text-align: center;
-    transition: 0.6s;
-}
-.sidebar li:hover a , .sidebar_header a:hover {
+li:hover a , .sidebar_header a:hover {
     font-size: 1.3rem;
 }
-.sidebar i {
-    margin-right: 0.5rem;
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 14rem;
 }
+.box , #bar_btn , #cancel_btn {
+    color: white;
+    text-shadow: 1px 1px 4px white;
+    background: #88248880;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 50px;
+}
+.box {
+    width: 40%;
+    padding: 1rem;
+    margin: 2rem;
+}
+.box > h1  {
+    font-size: 3.5rem;
+}
+.box > p {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+.name {
+    animation: color-change 4.5s infinite;
+    padding: 2rem;
+}
+@keyframes color-change {
+    0% { color: white; }
+    50% { color: rgb(225, 255, 58); }
+    100% { color: white; }
+  } 
+.column {
+    flex: 50%;
+}
+
+#portrait {
+    border-radius: 100%;
+    width: 80%;
+}
+
 #sidebar_checkbox {
     display: none;
 }
 #bar_btn , #cancel_btn  {
     position: absolute;
     cursor: pointer;
-    background: #88248880 ;
-    border-radius: 50px;
     font-size: 2rem;
     top: 1.5rem;
-    color: white;
     padding: 6px 12px;
 }
 #bar_btn {
@@ -138,46 +146,45 @@ video {
     left: 13rem;
 }
 @media screen and (max-width: 600px) {
-
+    .sidebar {
+        width: 10rem;
+        left: -10rem;
+    }
+    .row {
+        margin-left: 2rem; 
+    }
+    .box {
+        width: 80%;
+    }
+    .box h1 {
+        font-size: 2rem;
+    }
     .name {
         margin-left: 9rem;
         margin-top: 8rem;
         margin-right: 1rem;
         margin-bottom: 8rem;
     }
-    .row {
-        margin-left: 1rem; 
-    }
-    .box {
-        flex: 70%;
-    }
-    .box h1 {
-        font-size: 2rem;
-    }
     #contact.btn {
         font-size: 1rem;
         left: 10rem;
         top: 24rem;
-    }
-    .sidebar {
-        width: 10rem;
-        left: -10rem;
     }
     #sidebar_checkbox:checked ~ label #cancel_btn {
         left: 11rem;
     }
 }
 @media screen and (max-width: 992px) and (min-width: 600px) {
-    .name {
-        margin-left: 12rem;
-        margin-top: 8rem;
-        margin-right: 1rem;
-        margin-bottom: 9rem;
+    .row {
+        margin-left: 2rem; 
     }
     .box {
-        flex: 90%;
+        width: 90%;
     }
-    .row {
-        margin-left: 1rem; 
+    .name {
+        margin-left: 12rem;
+        margin-top: 9rem;
+        margin-right: 1rem;
+        margin-bottom: 9rem;
     }
 }
