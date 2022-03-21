@@ -19,34 +19,49 @@ section {
     display: flex;
 }
 .right {
+    flex: 50%;
     color: white;
     text-shadow: 1px 1px 4px white;
-    margin-left: 3rem;
+    margin-left: 12rem;
     margin-top: 6rem;
-    margin-right: 1rem;
 }
 .left {
+    display: block;
+    flex: 50%;
     color: white;
     text-shadow: 1px 1px 4px white;
-    margin-left: 14rem;
-    margin-top: 6rem;
-    position: sticky;
+    left: 14rem;
+    top: 6rem;
     animation: color-change 4.5s infinite;
+    position: sticky;
+    height: 80vh;
 }
 .box {
-    background: #b030b02a;
+    width: 30rem;
+    background: #b030b036;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 50px;
     padding: 1rem;
+    width: 90%;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+    position: sticky;
+    
+}
+.content {
+    background: #81248180;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 50px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
 }
 .box > h1  {
-    font-size: 4rem;
-}
-.box > h3 {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    font-size: 3.5rem;
 }
 .box > p {
     font-size: 1rem;
@@ -67,7 +82,7 @@ section {
     left: -12rem;
     width: 12rem;
     height: 100vh;
-    background: #b030b02a;
+    background: #b030b036;
     text-shadow: 1px 1px 4px white;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 10px );
@@ -80,7 +95,7 @@ section {
     line-height: 2rem;
     text-shadow: 1px 1px 4px white;
     text-align: center;
-      background: #b030b02a;
+    background: #b030b02a;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -109,7 +124,7 @@ section {
 #sidebar_checkbox {
     display: none;
 }
-#bar_btn , #cancel_btn , #contact_btn {
+#bar_btn , #cancel_btn  {
     position: absolute;
     cursor: pointer;
     background: #b030b080 ;
@@ -120,13 +135,15 @@ section {
     padding: 6px 12px;
 }
 #contact_btn {
+    color: white;
     font-size: 1rem;
     text-shadow: 1px 1px 4px white;
-    top: 26rem;
-    
-    background: #b030b02a;
+    padding: 1rem;
+    background: #b030b036;
+    border-radius: 50px;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     transition: 0.4s;
+    position: sticky;
 }
 #contact_btn:hover {
     font-size: 1.5rem;
