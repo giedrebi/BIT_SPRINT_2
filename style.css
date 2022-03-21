@@ -20,7 +20,7 @@ section {
     
 }
 .right {
-    flex: 20%;
+    
     color: white;
     text-shadow: 1px 1px 4px white;
     background: #b030b02a;
@@ -34,7 +34,6 @@ section {
     margin-right: 1rem;
 }
 .left {
-    flex: 17%;
     color: white;
     text-shadow: 1px 1px 4px white;
     background: #b030b02a;
@@ -129,8 +128,8 @@ section {
 #contact_btn {
     font-size: 1rem;
     text-shadow: 1px 1px 4px white;
-    top: 28rem;
-    left: 14rem;
+    top: 26rem;
+    
     background: #b030b02a;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     transition: 0.4s;
