@@ -49,7 +49,6 @@ footer > p {
 fieldset {
     border: none;
     text-align: center;
-    display: inline-block;
 }
 i {
     margin-right: 0.5rem;
