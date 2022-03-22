@@ -109,7 +109,7 @@ li:hover a , .sidebar_header a:hover {
 }
 .box > p {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 .name {
     padding: 2rem;
