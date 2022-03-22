@@ -46,9 +46,10 @@ footer > p {
     display: flex;
     padding: 1rem 0;
 }
-fieldset , .contact {
+fieldset {
     border: none;
     text-align: center;
+    display: inline-block;
 }
 i {
     margin-right: 0.5rem;
