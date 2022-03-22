@@ -210,7 +210,7 @@ li:hover a , .sidebar_header a:hover {
         left: 11rem;
     }
     #message {
-        width: 12rem;
+        width: 10rem;
     }
 }
 @media screen and (max-width: 992px) and (min-width: 600px) {
