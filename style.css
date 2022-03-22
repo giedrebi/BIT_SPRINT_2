@@ -9,42 +9,16 @@
     list-style: none;
     text-decoration: none;
 }
+body {
+    position: relative;
+    min-height: 100vh;
+}
 video {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-}
-body {
-    position: relative;
-    min-height: 100vh;
-}
-section {
-    padding-bottom: 7.5rem; 
-}
-footer , .sidebar , .sidebar_header {
-    background: #b030b036;
-    text-shadow: 1px 1px 4px white;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
-    color: white;
-}
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 7.5rem;
-}
-footer > p {
-    text-align: right   ;
-    font-size: 0.7rem;
-    padding: 0 1rem 1rem 0 ;
-}
-.footer_nav {
-    display: flex;
-    padding: 1rem 0;
 }
 fieldset {
     border: none;
@@ -59,6 +33,32 @@ a {
     transition: 0.5s;
     font-size: 1rem;
     text-align: center;
+}
+section {
+    padding-bottom: 7.5rem; 
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7.5rem;
+}
+footer , .sidebar , .sidebar_header {
+    background: #b030b036;
+    text-shadow: 1px 1px 4px white;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    color: white;
+}
+footer > p {
+    text-align: right   ;
+    font-size: 0.7rem;
+    padding: 0 1rem 1rem 0 ;
+}
+.footer_nav {
+    display: flex;
+    padding: 1rem 0;
 }
 .sidebar a , .box a {
     line-height: 3rem;
