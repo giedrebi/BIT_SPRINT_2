@@ -15,6 +15,13 @@ video {
     min-width: 100%;
     min-height: 100%;
 }
+body {
+    position: relative;
+    min-height: 100vh;
+}
+section {
+    padding-bottom: 7.5rem; 
+}
 footer , .sidebar , .sidebar_header {
     background: #b030b036;
     text-shadow: 1px 1px 4px white;
@@ -24,8 +31,10 @@ footer , .sidebar , .sidebar_header {
     color: white;
 }
 footer {
-    position: ;
+    position: absolute;
     bottom: 0;
+    width: 100%;
+    height: 7.5rem;
 }
 footer > p {
     text-align: right   ;
@@ -36,6 +45,10 @@ footer > p {
     display: flex;
     padding: 1rem 0;
 }
+fieldset , .contact {
+    border: none;
+    text-align: center;
+}
 i {
     margin-right: 0.5rem;
 }
@@ -45,7 +58,6 @@ a {
     transition: 0.5s;
     font-size: 1rem;
     text-align: center;
-    
 }
 .sidebar a {
     line-height: 3rem;
@@ -55,6 +67,7 @@ a {
     left: -12rem;
     width: 12rem;
     height: 100%;
+    z-index: 1;
 }
 .sidebar_header {
     font-size: 1rem;
@@ -85,13 +98,17 @@ li:hover a , .sidebar_header a:hover {
     width: 40%;
     padding: 1rem;
     margin: 2rem;
+    text-align: center;
 }
 .box > h1  {
     font-size: 3rem;
 }
+.box > h2 {
+    margin-bottom: 1rem;
+}
 .box > p {
     font-size: 1rem;
-    padding-top: 1rem;
+    margin-bottom: 1rem;
 }
 .name {
     padding: 2rem;
@@ -102,6 +119,9 @@ li:hover a , .sidebar_header a:hover {
     50% { color: rgb(225, 255, 58); }
     100% { color: white; }
   } 
+.welcome {
+    text-align: left;
+}
 .column {
     flex: 50%;
 }
@@ -150,27 +170,25 @@ li:hover a , .sidebar_header a:hover {
     left: 13rem;
 }
 @media screen and (max-width: 600px) {
-    footer > p {
-        text-align: center;
-    }
     .sidebar {
         width: 10rem;
         left: -10rem;
     }
     .row {
-        margin-left: 2rem; 
+        margin: 0 1rem;
     }
     .box {
+        text-align: center;
         width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
     }
     .box h1 {
         font-size: 2rem;
     }
     .name {
-        margin-left: 9rem;
-        margin-top: 8rem;
-        margin-right: 1rem;
-        margin-bottom: 8rem;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
     }
     #contact.btn {
         font-size: 1rem;
@@ -183,15 +201,17 @@ li:hover a , .sidebar_header a:hover {
 }
 @media screen and (max-width: 992px) and (min-width: 600px) {
     .row {
-        margin-left: 2rem; 
+        margin: 0 1rem;
     }
     .box {
-        width: 90%;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
     }
     .name {
-        margin-left: 12rem;
-        margin-top: 9rem;
-        margin-right: 1rem;
-        margin-bottom: 9rem;
+        width: 50%;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
     }
 }

@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Giedre Bielske"/>
+    <meta name="title" content="Giedre Bielske web developer portfolio"/>
+    <meta name="description" content="Here you will find more information about me, Giedre. As well, you will find few projects that I made." />
+    <meta name="keywords" content="web developer , html , css"/>
+    <meta name="robots" content="index"/>
+    <meta name="googlebot" content="index"/>
+
+    <meta property="og:title" content="Giedre Bielske web developer portfolio" />
+	<meta property="og:description" content="Here you will find more information about me, Giedre. As well, you will find few projects that I made." />
+    <meta property="og:url" content="https://giedrebi.github.io/BIT_PROJECTS_CSS/CSS/Lecture_8/pages/Main_page.html" />
+	<meta property="og:image" content="https://giedrebi.github.io/BIT_PROJECTS_CSS/CSS/Lecture_8/images/project1/pexels-vecislavas-popa-1571454.jpg" />
+    <meta property="og:image:alt" content="brown and nude interior design" />
+    <meta property="og:type" content="article"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:title" content="Giedre Bielske web developer portfolio"/>
+	<meta name="twitter:description" content="Here you will find more information about me, Giedre. As well, you will find few projects that I made."/>
+	<meta name="twitter:image" content="https://giedrebi.github.io/BIT_PROJECTS_CSS/CSS/Lecture_8/images/project1/pexels-vecislavas-popa-1571454.jpg"/>
+
     <link rel="stylesheet" href="../style.css">
-    <title>Document</title>
+    <title>Giedre Bielske portfolio</title>
  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8RZ3QVWTM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q8RZ3QVWTM');
+    </script>
 </head>
 <body>
     <video autoplay muted loop>
@@ -38,38 +66,51 @@
         <div class="row">
             <div class="box name">
                 <h1>CONTACT ME</h1>
-                <p>HTML / CSS</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box contact">
+                <h2>YOU CAN CONTACT ME VIA:</h2>
+                <p>Email: giedrebielske@gmail.com</p>
+                <p style="margin-bottom: 3rem;">Mobile no: +37061111111</p>
+                <p>As well, you can find me in GITHUB: Giedre Bielske (giedrebi)</p>
             </div>
             <div class="box">
-                <p>WORK EXPERIENCE</p>
-                <p>I have experience in such areas of work like customer service, transport administration. </p>
-                <p>Right now I'm changing my qualification to web developer. At this moment I'm student in Baltic Institute of Technology. </p>
-                <p>aaa</p>
+                <form action="" method="get">
+                    <fieldset>
+                        <legend style="margin-bottom: 0.5rem;">Send a message to me:</legend>
+                        <label for="name">Name</label><br/>
+                        <input id="name" type="text"/><br/><br/>
+                        <label for="email">Email</label><br/>
+                        <input id="email" type="email"/><br/><br/>
+                        <label for="message"> Your message</label><br/>
+                        <input id="message" type="text" maxlength="100" size="30" style="height: 120px;"/><br/><br/>
+                        <input type="submit" value="Send"/>
+                    </fieldset>
+                </form>
             </div>
         </div>
     </section>
     <footer>
-        <div class="column">
-            <ul>
+        <div class="footer_nav">
+            <ul class="column">
                 <li>
                     <a href="../index.html"><i class="fas fa-home"></i>HOME</a>
                 </li>
                 <li>
-                    <a href="../pages/about.html"><i class="far fa-user"></i>ABOUT ME</a>
+                    <a href="about.html"><i class="far fa-user"></i>ABOUT ME</a>
                 </li>
             </ul>
-        </div>
-        <div class="column">
-            <ul>
+            <ul class="column">
                 <li>
-                    <a href="../pages/projects.html"><i class="fas fa-laptop-code"></i>PROJECTS</a>
+                    <a href="projects.html"><i class="fas fa-laptop-code"></i>PROJECTS</a>
                 </li>
                 <li>
-                    <a href="../pages/contact.html"><i class="fas fa-phone-square-alt"></i>CONTACT</a>
+                    <a href="contact.html"><i class="fas fa-phone-square-alt"></i>CONTACT</a>
                 </li> 
             </ul>
         </div>
-        <p></p>
+        <p>&#169; 2022 Giedre Bielske</p>
     </footer>
 </body>
 </html>
