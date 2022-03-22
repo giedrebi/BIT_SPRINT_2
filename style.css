@@ -198,6 +198,9 @@ li:hover a , .sidebar_header a:hover {
         margin-top: 6rem;
         margin-bottom: 2rem;
     }
+    .gif {
+        width: 70%;
+    }
     #contact.btn {
         font-size: 1rem;
         left: 10rem;
