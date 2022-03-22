@@ -133,9 +133,6 @@ li:hover a , .sidebar_header a:hover {
     border-radius: 100%;
     width: 80%;
 }
-#sidebar_checkbox {
-    display: none;
-}
 #bar_btn , #cancel_btn  {
     position: absolute;
     cursor: pointer;
@@ -154,6 +151,9 @@ li:hover a , .sidebar_header a:hover {
     transition: all 1s;
     top: 2rem;
     font-size: 1rem;
+}
+#sidebar_checkbox {
+    display: none;
 }
 #sidebar_checkbox:checked ~ .sidebar {
     left: 0;
