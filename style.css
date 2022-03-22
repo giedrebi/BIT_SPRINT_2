@@ -170,6 +170,9 @@ li:hover a , .sidebar_header a:hover {
 #sidebar_checkbox:checked ~ label #cancel_btn {
     left: 13rem;
 }
+#message {
+    width: 20rem;
+}
 @media screen and (max-width: 600px) {
     .sidebar {
         width: 10rem;
@@ -198,6 +201,9 @@ li:hover a , .sidebar_header a:hover {
     }
     #sidebar_checkbox:checked ~ label #cancel_btn {
         left: 11rem;
+    }
+    #message {
+        width: 10rem;
     }
 }
 @media screen and (max-width: 992px) and (min-width: 600px) {
