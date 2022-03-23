@@ -74,4 +74,57 @@ To open and close sidebar navigation, I added `input` and `label` elements to ht
 ```
 *How to add font awesome you will find in section 3.*
 
+To style those buttons I added these selectors in style.css file:
+```
+#bar_btn , #cancel_btn  {
+    position: absolute;
+    cursor: pointer;
+    font-size: 2rem;
+    top: 1.5rem;
+    padding: 6px 12px;
+    color: white;
+    text-shadow: 1px 1px 4px white;
+    background: #410541d5;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 50px;
+}
+#bar_btn {
+    left: 3rem;
+    transition: all 0.5s;
+    font-size: 1.5rem;
+}
+#cancel_btn {
+    left: -3rem;
+    z-index: 2;
+    transition: all 1s;
+    top: 2rem;
+    font-size: 1rem;
+}
+#sidebar_checkbox {
+    display: none;
+}
+#sidebar_checkbox:checked ~ .sidebar {
+    left: 0;
+    transition: all 1s;
+}
+#sidebar_checkbox:not(checked) ~ .sidebar {
+    transition: all 1s;
+}
+#sidebar_checkbox:checked ~ label #bar_btn {
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+#sidebar_checkbox:checked ~ label #cancel_btn {
+    left: 13rem;
+}
+```
 #### Left sidebar 
+To create sidebar, I added `div` tag to html file:
+```
+ <div class="sidebar"></div>
+```
+I made sidebar into two sections:
+1. ```<div class="sidebar_header"></div>```
