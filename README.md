@@ -64,7 +64,7 @@ video {
 ```
 ### 2. Left sidebar
 #### Open and close buttons
-To open and close sidebar navigation, I added `input` and `label` elements to html file:
+To open and close sidebar navigation, I added `input` and `label` tags to html file:
 ```
 <input type="checkbox" id="sidebar_checkbox" />
 <label for="sidebar_checkbox">
@@ -74,7 +74,7 @@ To open and close sidebar navigation, I added `input` and `label` elements to ht
 ```
 *How to add font awesome you will find in section 3.*
 
-To style those buttons I added these selectors in style.css file:
+To style those buttons I added these declarations in style.css file:
 ```
 #bar_btn , #cancel_btn  {
     position: absolute;
@@ -137,7 +137,7 @@ In `sidebar_header` I inserted `img` and `a` tags:
     <a href="../index.html">Web developer</a>
 </div>
 ```
-To style sidebar I added these selectors in style.css file:
+To style sidebar I added these declarations in style.css file:
 ```
 .sidebar {
     position: fixed;
@@ -228,7 +228,7 @@ In `section` I added identical `div` tags by using `class="row"`. Into row I add
     <div class="row"></div>
 </section>
 ```
-And to style `row` and `box` I added these selectors in style.css file:
+And to style `row` and `box` I added these declarations in style.css file:
 ```
 .row {
     display: flex;
@@ -284,7 +284,7 @@ In `footer` I added two columns navigation for my website by using `class="colum
 ```
 *How to add font awesome (`i` tags) you will find in section 3.*
 
-To style footer I added these selectors in style.css file:
+To style footer I added these selectors with declarations in style.css file:
 ```
 section {
     padding-bottom: 7rem;
@@ -344,7 +344,7 @@ I inserted them in projects.html file in `div .box` tag by using `img` tag:
     <a href="https://giedrebi.github.io/BIT_PROJECTS_CSS/CSS/Lecture_8/Landing_page.html" target="_blank">See website</a>
 </div>   
 ```
-To style gif I adedd this selector:
+To style gif I adedd declarations:
 ```
 .gif {
     width: 60%;
