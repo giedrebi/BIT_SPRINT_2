@@ -126,5 +126,8 @@ To create sidebar, I added `div` tag to html file:
 ```
  <div class="sidebar"></div>
 ```
-I made sidebar into two sections:
+To made sidebar into two sections, I added these two tags into above tag:
 1. ```<div class="sidebar_header"></div>```
+2. ``` <ul></ul>```
+
+1. 
