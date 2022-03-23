@@ -175,9 +175,6 @@ In an unordered list ``` <ul></ul>``` I inserted `li` tags to navigate in my web
 ```
 To style list (`ul`,`li`and`a`) I added these selectors in style.css file:
 ```
-i {
-    margin-right: 0.5rem;
-}
 a {
     display: block;
     color: white;
@@ -198,4 +195,130 @@ First I added `@import url` into style.css folder:
 ```
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 ```
-Then I take few icons from https://fontawesome.com/icons and added in html file into buttons tag `label`, sidebar and footer lists tag `ul>li`.
+Then I take few icons from https://fontawesome.com/icons and added in html file into buttons tag `label`, sidebar and footer lists tag `ul>li`. For example:
+Copy `i` tag and insert it to buttons in `label` tag:
+```
+<label for="sidebar_checkbox">
+    <i class="fas fa-bars" id="bar_btn"></i>
+    <i class="fas fa-times" id="cancel_btn"></i>
+</label>
+```
+To style `i` tag I added this selector to style.css file:
+```
+i {
+    margin-right: 0.5rem;
+}
+```
+### 4. Two columns layout
+In `section` I added identical `div` tags by using `class="row"`. Into row I added `div` by using `class="box"`:
+```
+<section>
+    <div class="row">
+        <div class="box name welcome">
+            <h1>Hi,</h1>
+            <h1>I'm Giedre,</h1>
+            <h1>Web developer</h1>
+            <p>HTML / CSS</p>
+        </div>
+    </div>
+    <div class="row"></div>
+</section>
+```
+And to style `row` and `box` I added these selectors in style.css file:
+```
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 14rem;
+}
+.box {
+    width: 40%;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px white;
+    background: #410541d5;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 50px;
+}
+.box > h1  {
+    font-size: 3rem;
+}
+.box > h2 {
+    margin-bottom: 1rem;
+}
+.box > p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+```
+### 5. Two columns footer
+In `footer` I added two collumns navigation for my website by using `class="column"`:
+```
+<div class="footer_nav">
+    <ul class="column">
+        <li>
+            <a href="index.html"><i class="fas fa-home"></i>HOME</a>
+        </li>
+        <li>
+            <a href="pages/about.html"><i class="far fa-user"></i>ABOUT ME</a>
+        </li>
+    </ul>
+    <ul class="column">
+        <li>
+            <a href="pages/projects.html"><i class="fas fa-laptop-code"></i>PROJECTS</a>
+        </li>
+        <li>
+            <a href="pages/contact.html"><i class="fas fa-phone-square-alt"></i>CONTACT</a>
+        </li> 
+    </ul>
+</div>
+```
+*How to add font awesome (`i` tags) you will find in section 3.*
+To style footer I added these selectors in style.css file:
+```
+section {
+    padding-bottom: 7rem;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #410541d5;
+    text-shadow: 1px 1px 4px white;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    color: white;
+}
+footer > p {
+    text-align: right   ;
+    font-size: 0.7rem;
+    padding: 0 1rem 1rem 0 ;
+}
+.footer_nav {
+    display: flex;
+    padding: 1rem 0;
+}
+.column {
+    flex: 50%;
+}
+.column a {
+    line-height: 2rem;
+}
+```
+### 6. Animation
+I added animation to one of`div .box`to change text color.
+In html file I added `class="name"`:
+```
+<div class="box **name** welcome">
+    <h1>Hi,</h1>
+    <h1>I'm Giedre,</h1>
+    <h1>Web developer</h1>
+    <p>HTML / CSS</p>
+</div>
+```
