@@ -44,7 +44,7 @@ video {
 }
 ```
 ### 2. Left sidebar
-##### Open and close buttons
+#### Open and close buttons
 To open and close sidebar navigation, I added `input` and `label` elements to html file:
 ```
 <input type="checkbox" id="sidebar_checkbox" />
