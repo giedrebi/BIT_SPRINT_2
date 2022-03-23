@@ -257,7 +257,7 @@ And to style `row` and `box` I added these selectors in style.css file:
 }
 ```
 ### 5. Two columns footer
-In `footer` I added two collumns navigation for my website by using `class="column"`:
+In `footer` I added two columns navigation for my website by using `class="column"`:
 ```
 <div class="footer_nav">
     <ul class="column">
@@ -279,6 +279,7 @@ In `footer` I added two collumns navigation for my website by using `class="colu
 </div>
 ```
 *How to add font awesome (`i` tags) you will find in section 3.*
+
 To style footer I added these selectors in style.css file:
 ```
 section {
