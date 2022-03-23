@@ -137,6 +137,26 @@ In `sidebar_header` I inserted `img` and `a` tags:
     <a href="../index.html">Web developer</a>
 </div>
 ```
+To style sidebar I added these selectors in style.css file:
+```
+.sidebar {
+    position: fixed;
+    left: -12rem;
+    width: 12rem;
+    height: 100%;
+    z-index: 1;
+}
+.sidebar_header {
+    font-size: 1rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 2rem;
+    text-align: center;
+}
+.sidebar_header a:hover {
+    font-size: 1.2rem;
+}
+```
 *Images, gifs and video you will find in folder images*
 
 In an unordered list ``` <ul></ul>``` I inserted `li` tags to navigate in my website:
@@ -146,10 +166,29 @@ In an unordered list ``` <ul></ul>``` I inserted `li` tags to navigate in my web
         <a href="../pages/about.html"><i class="far fa-user"></i>ABOUT ME</a>
     </li>
     <li>
-                <a href="../pages/projects.html"><i class="fas fa-laptop-code"></i>PROJECTS</a>
+        <a href="../pages/projects.html"><i class="fas fa-laptop-code"></i>PROJECTS</a>
     </li>
     <li>
         <a href="../pages/contact.html"><i class="fas fa-phone-square-alt"></i>CONTACT</a>
     </li>
 </ul>
+```
+To style list (`ul`,`li`and`a`) I added these selectors in style.css file:
+```
+i {
+    margin-right: 0.5rem;
+}
+a {
+    display: block;
+    color: white;
+    transition: 0.5s;
+    font-size: 1rem;
+    text-align: center;
+}
+li:hover a {
+    font-size: 1.2rem;
+}
+.sidebar a {
+    line-height: 3rem;
+}
 ```
