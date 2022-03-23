@@ -130,4 +130,26 @@ To made sidebar into two sections, I added these two tags into above tag:
 1. ```<div class="sidebar_header"></div>```
 2. ``` <ul></ul>```
 
-1. 
+In `sidebar_header` I inserted `img` and `a` tags:
+```
+<div class="sidebar_header">
+    <img id="portrait" src="../images/Giedre Bielske.jpg" alt="Giedre Bielske photo">
+    <a href="../index.html">Web developer</a>
+</div>
+```
+*Images, gifs and video you will find in folder images*
+
+In an unordered list ``` <ul></ul>``` I inserted `li` tags to navigate in my website:
+```
+<ul>
+    <li>
+        <a href="../pages/about.html"><i class="far fa-user"></i>ABOUT ME</a>
+    </li>
+    <li>
+                <a href="../pages/projects.html"><i class="fas fa-laptop-code"></i>PROJECTS</a>
+    </li>
+    <li>
+        <a href="../pages/contact.html"><i class="fas fa-phone-square-alt"></i>CONTACT</a>
+    </li>
+</ul>
+```
