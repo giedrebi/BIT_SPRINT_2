@@ -296,11 +296,6 @@ footer {
     -webkit-backdrop-filter: blur( 2px );
     color: white;
 }
-footer > p {
-    text-align: right   ;
-    font-size: 0.7rem;
-    padding: 0 1rem 1rem 0 ;
-}
 .footer_nav {
     display: flex;
     padding: 1rem 0;
@@ -316,7 +311,7 @@ footer > p {
 I added animation to one of`div .box`to change text color.
 In html file I added `class="name"`:
 ```
-<div class="box **name** welcome">
+<div class="box __name__ welcome">
     <h1>Hi,</h1>
     <h1>I'm Giedre,</h1>
     <h1>Web developer</h1>
