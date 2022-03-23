@@ -192,3 +192,10 @@ li:hover a {
     line-height: 3rem;
 }
 ```
+### 3. Font asewome icons
+
+First I added `@import url` into style.css folder:
+```
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+```
+Then I take few icons from https://fontawesome.com/icons and added in html file into buttons tag `label`, sidebar and footer lists tag `ul>li`.
