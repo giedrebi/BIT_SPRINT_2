@@ -156,6 +156,10 @@ To style sidebar I added these selectors in style.css file:
 .sidebar_header a:hover {
     font-size: 1.2rem;
 }
+#portrait {
+    border-radius: 100%;
+    width: 80%;
+}
 ```
 *Images, gifs and video you will find in folder images*
 
@@ -311,10 +315,127 @@ footer {
 I added animation to one of`div .box`to change text color.
 In html file I added `class="name"`:
 ```
-<div class="box __name__ welcome">
+<div class="box name welcome">
     <h1>Hi,</h1>
     <h1>I'm Giedre,</h1>
     <h1>Web developer</h1>
     <p>HTML / CSS</p>
 </div>
+```
+In style.css file I added selectors with `@keyframes`:
+```
+.name {
+    padding: 2rem;
+    animation: color-change 4.5s infinite;
+}
+@keyframes color-change {
+    0% { color: white; }
+    50% { color: #ffff00; }
+    100% { color: white; }
+  } 
+```
+### 7. Gifs
+I created gifs by using screenshots from my other websites. 
+I inserted them in projects.html file in `div .box` tag by using `img` tag:
+```
+<div class="box">
+    <h2>PROJECT 1</h2>
+    <img class="gif" src="../images/project1.gif" alt="gif of project 1">
+    <a href="https://giedrebi.github.io/BIT_PROJECTS_CSS/CSS/Lecture_8/Landing_page.html" target="_blank">See website</a>
+</div>   
+```
+To style gif I adedd this selector:
+```
+.gif {
+    width: 60%;
+    border-radius: 20px;
+}
+```
+### 8. Contact form
+I inserted contact `form` in `div .box` tag in contact.html file:
+```
+<div class="box">
+    <form action="" method="get">
+        <fieldset>
+            <legend style="margin-bottom: 0.5rem;">Send a message to me:</legend>
+            <label for="name">Name</label><br/>
+            <input id="name" type="text"/><br/><br/>
+            <label for="email">Email</label><br/>
+            <input id="email" type="email"/><br/><br/>
+            <label for="message"> Your message</label><br/>
+            <input id="message" type="text" maxlength="100" style="height: 80px;"/><br/><br/>
+            <input type="submit" value="Send"/>
+        </fieldset>
+    </form>
+</div>
+```
+To style this form I added these selectors:
+```
+fieldset {
+    border: none;
+    text-align: center;
+}
+#message {
+    width: 20rem;
+}
+```
+### 9. @media responsive website
+To create responsive website I added `@media` rule into style.css file.
+For device with screen `max-width: 600px`:
+```
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 10rem;
+        left: -10rem;
+    }
+    .row {
+        margin: 0 1rem;
+    }
+    .box {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    .box h1 {
+        font-size: 2rem;
+    }
+    .name {
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+    }
+    .gif {
+        width: 70%;
+    }
+    #contact.btn {
+        font-size: 1rem;
+        left: 10rem;
+        top: 24rem;
+    }
+    #sidebar_checkbox:checked ~ label #cancel_btn {
+        left: 11rem;
+    }
+    #message {
+        width: 10rem;
+    }
+}
+```
+For device with screen `max-width: 992px` and m`in-width: 600px`:
+```
+@media screen and (max-width: 992px) and (min-width: 600px) {
+    .row {
+        margin: 0 1rem;
+    }
+    .box {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    .name {
+        width: 50%;
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+    }
+}
 ```
