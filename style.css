@@ -35,13 +35,12 @@ a {
     text-align: center;
 }
 section {
-    padding-bottom: 7.5rem; 
+    padding-bottom: 7rem;
 }
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 7.5rem;
 }
 footer , .sidebar , .sidebar_header {
     background: #410541d5;
