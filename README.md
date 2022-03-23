@@ -20,5 +20,5 @@ All code was made with HTML and CSS.
 
 To make video as background, I needed to add 'video' tag to html file in 'body' section (in every page of website):
 '<video autoplay muted loop>
-        <source src="../images/Abstract.mp4" type="video/mp4">
-    </video>'
+    <source src="../images/Abstract.mp4" type="video/mp4">
+</video>'
