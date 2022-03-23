@@ -439,3 +439,26 @@ For device with screen `max-width: 992px` and m`in-width: 600px`:
     }
 }
 ```
+### 10. `meta` tags 
+For website to be more respoonsive I added few `meta` tags in html file in `head` section:
+```
+ <meta name="author" content="Giedre Bielske"/>
+<meta name="title" content="Giedre Bielske web developer portfolio"/>
+<meta name="description" content="Here you will find more information about me, Giedre. As well, you will find few projects that I made." />
+<meta name="keywords" content="web developer , html , css"/>
+<meta name="robots" content="index"/>
+<meta name="googlebot" content="index"/>
+```
+For website to be more responsive in social media, I added `meta` tags in html file in `head` section:
+```
+<meta property="og:title" content="Giedre Bielske web developer portfolio"/>
+<meta property="og:description" content="Here you will find more information about me, Giedre. As well, you will find few projects that I made." />
+<meta property="og:url" content="https://giedrebi.github.io/BIT_SPRINT_2/pages/about.html"/>
+<meta property="og:image" content="https://giedrebi.github.io/BIT_SPRINT_2/images/Giedre%20Bielske.jpg" />
+<meta property="og:image:alt" content="brown and nude interior design"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Giedre Bielske web developer portfolio"/>
+<meta name="twitter:description" content="Here you will find more information about me, Giedre. As well, you will find few projects that I made."/>
+<meta name="twitter:image" content="https://giedrebi.github.io/BIT_SPRINT_2/images/Giedre%20Bielske.jpg"/>
+```
