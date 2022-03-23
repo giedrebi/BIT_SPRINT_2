@@ -19,6 +19,25 @@ In this project you will find:
 
 All code was made with HTML and CSS.
 
+First, in style.css file I added `body` and `*` selectors:
+```
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+}
+```
+The font for this website I chose from google fonts, and added url `@import` in style.css file:
+```
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+```
 ### 1. Video background
 
 To make video as background, I needed to add `video` tag to html file in `body` section (in every page of website):
@@ -55,3 +74,4 @@ To open and close sidebar navigation, I added `input` and `label` elements to ht
 ```
 *How to add font awesome you will find in section 3.*
 
+#### Left sidebar 
