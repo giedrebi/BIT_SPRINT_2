@@ -440,7 +440,7 @@ For device with screen `max-width: 992px` and m`in-width: 600px`:
 }
 ```
 ### 10. `meta` tags 
-For website to be more respoonsive I added few `meta` tags in html file in `head` section:
+For website to be more responsive I added few `meta` tags in html file in `head` section:
 ```
  <meta name="author" content="Giedre Bielske"/>
 <meta name="title" content="Giedre Bielske web developer portfolio"/>
